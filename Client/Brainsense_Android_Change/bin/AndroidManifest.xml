@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.matrix.brainsense.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.matrix.brainsense.activity.WelcomeActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|locale|layoutDirection"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="RegisterActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|locale|layoutDirection"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="BasicActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|locale|layoutDirection"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="XBMCActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|locale|layoutDirection"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="ChoiceActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|locale|layoutDirection"
+            android:screenOrientation="landscape" >
+        </activity>
+
+        <receiver
+            android:name="com.matrix.brainsense.broadcast.MyBroadcast"
+            android:process="system" >
+            <intent-filter>
+                <action android:name="logOut" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="back" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package" />
+            </intent-filter>s
+        </receiver>
+    </application>
+
+</manifest>

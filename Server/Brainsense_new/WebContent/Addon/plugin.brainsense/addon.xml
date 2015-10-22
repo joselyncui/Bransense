@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.image.brainsense"
+  name="Brainsense"
+  version="0.0.1"
+  provider-name="Matrix Global">
+  <extension point="xbmc.python.pluginsource" library="brainsense.py">
+  <provides>image</provides>
+  </extension>
+  <extension point="xbmc.python.pluginsource" library="brainsense.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.python.pluginsource" library="brainsense.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Brainsense plugin</summary>
+    <summary lang="zh">Brainsense插件</summary>
+    <summary lang="he">תוסף Brainsense</summary>
+    <description>Brainsense plugin</description>
+    <description lang="zh">Brainsense插件</description>
+    <description lang="he">תוסף Brainsense</description>
+    <disclaimer>For demonstration only</disclaimer>
+  </extension>
+</addon>

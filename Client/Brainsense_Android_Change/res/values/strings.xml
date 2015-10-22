@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Brainsense</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+	<!--     Register Page -->
+	<string name="registerTitle">User Registration</string>
+	<string name="name">Name:</string>
+	<string name="email">Email:</string>
+	<string name="keycode">Key code:</string>
+	<string name="split">--</string>
+	<string name="required">*</string>
+	<string name="registerButton">Register</string>
+	
+	<!-- 	Download Base Package Page-->
+	<string name="basePackageTitle">Download Base Package</string>
+	<string name="basePackageLanguage">Language:</string>
+	<string name="chooseLanguage">Please choose language</string>
+	<string name="downLoadButton">Download and Install</string>
+	<string name="installButton">Installing</string>
+	<string name="nextButton">Next</string>
+	<string name="basePackageType">Type:</string>
+	<string name="chooseType">Please choose type</string>
+	
+	
+	<!-- 	Download XBMC page -->
+	<string name="downLoadXBMCTitle">Download XBMC</string>
+	<string name="downloadingButton">Downloading</string>
+	
+	<!-- 	Select Content -->
+	<string name="selectContentTitle">Select Content</string>
+	<string name="country">Country:</string>
+	<string name="chooseCountry">Please choose a country</string>
+	<string name="category">Category:</string>
+	<string name="chooseCategory">Please choose a category</string>
+    
+	<!--     error message -->
+    <string name="title">Alert</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="communication">Communication problems</string>
+    <string name="deviceIdNotMatch">DeviceId does not match Mac</string>
+    <string name="serverException">server exception</string>
+    <string name="registerNull">Please input your name,email and keycode</string>
+    <string name="emailFormat">Please check your email</string>
+    <string name="keyCodeLength">The length of the key code is wrong</string>
+    <string name="noKeyCode">Key code was not found in the DB, please contact system admin</string>
+    <string name="keyCodeRepeat">Key code is associated with another device, please contact system admin</string>
+    <string name="keyCodeNotMatch">Software key code number does not match the device ID</string>
+    <string name="review">Device is waiting for approval. Please contact system admin</string>
+    <string name="refused">Device is not authorized, please contact system admin</string>
+    <string name="registrationFailed">Registration failed</string>
+    <string name="noPackage">No packages available</string>
+    <string name="noChooseLanguage">Please choose language and type first</string>
+    <string name="sdcard">There is not enough memory on your SD card. Please delete files or uninstall apk</string>
+    <string name="contentLimit">You have reached the memory limit on your device</string>
+    <string name="finish">Download and installation completed successfully</string>
+    <string name="XBMCExist">XBMC already installed on your device</string>
+    <string name="noXBMC">XBMC does not exist</string>
+    <string name="noWatchdog">Watchdog does not exist</string>
+    <string name="downloadFailed">Download failed:file not exist or connection error</string>
+    <string name="updateXBMC">Update XBMC....</string>
+    <string name="updateWatchdog">Update watchdog....</string>
+    <string name="installFailed">Install failed. Please retry</string>
+    
+	<!--     quit dialog -->
+    <string name="quit">Are you sure you want to quit?</string>
+    <string name="positiveYes">Yes</string>
+    <string name="negativeNo">No</string>
+    
+
+</resources>
